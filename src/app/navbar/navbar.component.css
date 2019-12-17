@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.navbar{
+    margin: 0%; 
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+.navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: rgb(75, 172, 51) !important;
+}
+.form-inline{
+    margin: 2%;
+}
+.navbar-brand{
+    margin: 2%;
+}
+.btn{
+    width: 55px;
+    height:30px;
+}
