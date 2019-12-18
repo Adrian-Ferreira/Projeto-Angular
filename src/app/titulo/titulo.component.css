@@ -8,5 +8,8 @@ div{
 h1{
     text-align: center;
     color: rgb(75, 172, 51);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 3px rgb(173, 173, 173);
+    
 
 }

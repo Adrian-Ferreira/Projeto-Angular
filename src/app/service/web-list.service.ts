@@ -15,4 +15,10 @@ export class WebListService {
    public obterListas(){
      return this.http.get("https://jsonplaceholder.typicode.com/users")
    }
+   public obterUser(){
+    return this.http.get("https://jsonplaceholder.typicode.com/todos")
+  }
+   public obterListaPorId(id:number){
+     return this.http.get("https://jsonplaceholder.typicode.com/todos/"+id)
+   }
 }

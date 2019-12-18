@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-12">
+        <input class="input ml-3 mr-3" type="number" placeholder="Digite o ID" [(ngModel)]="idBuscar">
+        <button class="btn ml-3 mr-3" (click)="pesquisar();">APENAS 1 ID</button>
+        <button class="btn ml-3 mr-3" (click)="pesquisarTodos();">PESQUISAR TODOS</button>
+    </div>
+</div>
+
+<div *ngIf="lista == false">
+    <div *ngIf="_user">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card xuxa">
+                    <div class="card-body">
+                        <p><strong>User ID: </strong>{{_user.userId}}</p>
+                        <p><strong>ID: </strong>{{_user.id}}</p>
+                        <p><strong>Titulo: </strong> {{_user.title}}</p>
+                        <p><strong>Complementos: </strong>{{_user.completed}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="lista == true">
+    <div *ngFor="let _list of user">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card xuxa">
+                    <div class="card-body">
+                        <p><strong>User ID: </strong>{{_list.userId}}</p>
+                        <p><strong>ID: </strong>{{_list.id}}</p>
+                        <p><strong>Titulo: </strong>{{_list.title}}</p>
+                        <p><strong>Complementos: </strong>{{_list.completed}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

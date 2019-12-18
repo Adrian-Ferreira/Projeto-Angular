@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { HomeComponent } from './home/home.component';
 import { ContatoComponent } from './contato/contato.component';
 import { SobrenosComponent } from './sobrenos/sobrenos.component';
+import { NavibarConteudoComponent } from './navibar-conteudo/navibar-conteudo.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { SobrenosComponent } from './sobrenos/sobrenos.component';
     RodapeComponent,
     HomeComponent,
     ContatoComponent,
-    SobrenosComponent
+    SobrenosComponent,
+    NavibarConteudoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

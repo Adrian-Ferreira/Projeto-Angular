@@ -2,3 +2,16 @@
     margin: 0%;
     padding: 0%;
 }
+.xuxa{
+    background-color: rgb(100, 196, 76);
+    margin: auto;
+    margin-top: 2%;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.568);
+    margin-bottom: 10%;
+
+}
+.card-body{
+    margin: 5%;
+}
